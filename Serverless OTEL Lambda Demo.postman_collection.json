@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "dd5bb43a-4bff-4162-99e0-09adc5315246",
+		"name": "Serverless OTEL Lambda Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5221555"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}/LambdaToDocumentDB",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"LambdaToDocumentDB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"request\": \"number2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{basePath}}/LambdaToDocumentDB",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"LambdaToDocumentDB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Object",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}/LambdaToDocumentDB",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"LambdaToDocumentDB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Object",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{basePath}}/LambdaToDocumentDB?id=6597d7fad909947403ff5a1c",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"LambdaToDocumentDB"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6597d7fad909947403ff5a1c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Object",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"6597d4bc18de898d7d5b07d9\", \n    \"request1\": \"number4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{basePath}}/LambdaToDocumentDB",
+					"host": [
+						"{{basePath}}"
+					],
+					"path": [
+						"LambdaToDocumentDB"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "basePath",
+			"value": "https://9hifooiyd7.execute-api.eu-west-1.amazonaws.com/demo"
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://eqh7d49lde.execute-api.eu-west-1.amazonaws.com/{{basePath}}"
+		}
+	]
+}
